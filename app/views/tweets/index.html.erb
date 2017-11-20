@@ -1,8 +1,180 @@
-  <div class="contents row" >
-    <% @tweets.each do |tweet| %>
-      <div class="content_post" style="background-image: url(<%= tweet.image %>);">
-        <%= simple_format(tweet.text) %>
-        <span class="name"><%= tweet.name %></span>
+<!DOCTYPE HTML>
+<!--
+  Twenty by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Ryu-tatsu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  </head>
+  <body class="index">
+    <div id="page-wrapper"><html>
+  <head>
+    <title>Ryu-tatsu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  </head>
+  <body class="landing">
+
+    <!-- Page Wrapper -->
+      <div id="page-wrapper">
+
+        <!-- Header -->
+          <header id="header" class="alt">
+            <h1><a href="index.html">Ryu-tatsu</a></h1>
+            <nav id="nav">
+              <ul>
+                <li class="special">
+                  <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                  <div id="menu">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="generic.html"></a></li>
+                      <li><a href="elements.html"></a></li>
+                      <li><a href="#">Sign Up</a></li>
+                      <li><a href="#">Log In</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+        <!-- Banner -->
+          <section id="banner">
+            <div class="inner">
+              <h2>Ryu-tatsu</h2>
+              <p>留学に行きたい人のための<br />
+              コミュニティアプリ</p>
+              <ul class="actions">
+                <li><a href="#" class="button special">Sign Up</a></li>
+                <li><a href="#" class="button fit">Log In</a></li>
+              </ul>
+            </div>
+            <a href="#one" class="more scrolly">Learn More</a>
+          </section>
+
+        <!-- One -->
+          <section id="one" class="wrapper style1 special">
+            <div class="inner">
+              <header class="major">
+                <h2>留学って、なんだ？</h2>
+                <p>海の向こうが気になる。<br />
+                ネットの画像だけじゃなく、その国の景色を見てみたい。<br />
+              　でもそもそも留学ってなんだろう？<br />
+              答えなんてないのはわかってるけど<br />
+            　　ちょっと一緒に考えてみませんか？</p>
+              </header>
+            </div>
+          </section>
+
+        <!-- Two -->
+          <section id="two" class="wrapper alt style2">
+            <section class="spotlight">
+              <div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+                <h2>あああ</h2>
+                <p>ああsdfg</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+                <h2>あsdf</h2>
+                <p>あsdcf</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+                <h2>あsdf</h2>
+                <p>あsdfg</p>
+              </div>
+            </section>
+          </section>
+
+        <!-- Three -->
+          <section id="three" class="wrapper style3 special">
+            <div class="inner">
+              <header class="major">
+                <h2>留学style</h2>
+                <p>あsdf</p>
+              </header>
+              <ul class="features">
+                <li class="icon fa-flag-o">
+                  <h3>学部留学</h3>
+                  <p>現地の大学に学部生として入学し、専門分野について学ぶことができる。<br />
+                勉強以外にも、スポーツや芸術、音楽など、自分の関心が高い分野の専門性を高めることもできる。</p>
+              </li>
+                <li class="icon fa-paper-plane-o">
+                  <h3>語学留学</h3>
+                  <p>語学力の向上を目的とし、１週間単位から始めることができる。</p>
+                </li>
+                <li class="icon fa-laptop">
+                  <h3>ボランティア</h3>
+                  <p>環境保護・災害援助・福祉などの活動を行うNGO・NPOなどの団体と共に<br />地域コミュニティとの交流を通じてボランティア活動を行う。</p>
+                </li>
+                <li class="icon fa-code">
+                  <h3>ワーキングホリデー</h3>
+                  <p>海外で働くことができる制度。カナダやオーストラリア、ニュージーランド、イギリスなど。</p>
+                </li>
+                <li class="icon fa-headphones">
+                  <h3>インターンシップ</h3>
+                  <p>学生が現地の企業で研修生として、働くことができる制度。<br />
+                  語学学校・大学からの紹介・自己開拓など探し方は様々。</p>
+                </li>
+                <li class="icon fa-heart-o">
+                  <h3>バックパック</h3>
+                  <p>バッグ一つで世界中を旅する、他とは一線を画する留学スタイル。</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+        <!-- CTA -->
+          <section id="cta" class="wrapper style4">
+            <div class="inner">
+              <header>
+                <h2>自分なりの留学styleを探しに行こう。</h2>
+                <p>始まりは、いつもチャンスだ。</p>
+              </header>
+              <ul class="actions vertical">
+                <li><a href="#" class="button fit special">Sign Up</a></li>
+                <li><a href="#" class="button fit">Log In</a></li>
+              </ul>
+            </div>
+          </section>
+
+        <!-- Footer -->
+          <footer id="footer">
+            <ul class="icons">
+              <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+          </footer>
+
       </div>
-    <% end %>
-  </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
+
+
