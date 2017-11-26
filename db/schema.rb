@@ -11,14 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171114171358) do
+ActiveRecord::Schema.define(version: 20171124094623) do
 
   create_table "tweets", force: :cascade do |t|
     t.string   "name",       limit: 255
+    t.string   "country",    limit: 255
+    t.text     "genre",      limit: 65535
+    t.string   "cost",       limit: 255
+    t.string   "term",       limit: 255
     t.text     "text",       limit: 65535
-    t.text     "image",      limit: 65535
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "icon_image", limit: 255
   end
 
 end

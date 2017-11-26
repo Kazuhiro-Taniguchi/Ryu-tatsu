@@ -28,6 +28,7 @@
 
 	ol, ul {
 		list-style: none;
+		margin: 0;
 	}
 
 	blockquote, q {
@@ -69,7 +70,7 @@
 		float: left;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
+		/*box-sizing: border-box;*/
 	}
 
 	.row:after, .row:before {
@@ -317,7 +318,7 @@
 	@media screen and (max-width: 1680px) {
 
 		.row > * {
-			padding: 0 0 0 1.5em;
+			padding: 0;
 		}
 
 		.row {
@@ -532,7 +533,7 @@
 	@media screen and (max-width: 1280px) {
 
 		.row > * {
-			padding: 0 0 0 1.5em;
+			padding: 0;
 		}
 
 		.row {
@@ -1177,7 +1178,7 @@
 	@media screen and (max-width: 480px) {
 
 		.row > * {
-			padding: 0 0 0 1.5em;
+			padding: 0;
 		}
 
 		.row {
@@ -1449,7 +1450,6 @@
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -3261,7 +3261,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		z-index: -1;
 	}
 
 		#header h1 {
@@ -3394,6 +3394,7 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+		background-color: rgba(100, 100, 100, 0.3);
 	}
 
 		#banner h2 {
@@ -3477,10 +3478,10 @@
 			text-align: center;
 			text-transform: uppercase;
 			width: 16em;
-			z-index: 1;
+			z-index: -1;
 		}
 
-			#banner .more:after {
+			#ばanner .more:after {
 				background-image: url("images/arrow.svg");
 				background-position: center;
 				background-repeat: no-repeat;
@@ -3540,6 +3541,14 @@
 				}
 
 		}
+
+.test-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 	body.is-loading #banner h2 {
 		-moz-transform: scale(0.95);
@@ -3629,7 +3638,7 @@
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("style/css/images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");

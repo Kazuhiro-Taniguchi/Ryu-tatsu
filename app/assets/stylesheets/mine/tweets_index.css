@@ -1,0 +1,84 @@
+.tweet_header{
+  height: 44px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 7px;
+}
+
+.toukou-btn{
+  padding: 5px 5px;
+  background-color: #ed4933;
+
+
+}
+
+.tweet{
+  margin-bottom: 25px;
+  margin-right: 5px;
+  margin-left: 25px;
+  border: solid 1px #8d9ad8;
+  background-color: #9fdfd8;
+  width: 370px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+.profile{
+  height: 90px;
+  width: 100%;
+  background-color: ;
+}
+
+.icon_image{
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #7ad1c7;
+  float: left;
+}
+
+.tweet_name{
+  height: 30px;
+  width: 200px;
+  background-color: ;
+  float: left;
+  margin-left: 40px;
+  margin-top: 30px;
+  color: #2e3842;
+  font-size: large;
+  font-weight: bold;
+}
+
+.country{
+  height: 30px;
+  background-color: ;
+  margin-left: 20px;
+  color: #2e3842;
+  font-weight: bold;
+}
+
+.genre{
+  height: 30px;
+  background-color: ;
+  margin-left: 20px;
+  color: #2e3842;
+  font-weight: bold;
+}
+
+.text{
+  height: 360px;
+  width: 348px;
+  background-color: #f2f2f2;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #2e3842;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

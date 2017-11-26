@@ -1,0 +1,17 @@
+.actions{
+  width: 60vw;
+  max-width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.actions li{
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.grid-6{
+  margin: 0;
+}
+
