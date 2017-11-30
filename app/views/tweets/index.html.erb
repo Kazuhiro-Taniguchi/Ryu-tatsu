@@ -1,18 +1,23 @@
 <div class="tweet_header">
-  <%= link_to '投稿する', tweets_new_path,
+  <% if user_signed_in? %>
+    <%= link_to '投稿する', tweets_new_path,
     class:"toukou-btn" %>
+  <% else %>
+    <%= link_to "LOG IN", new_user_session_path, class: 'button fit' %>
+    <%= link_to "SIGN UP", new_user_registration_path, class: 'button special' %>
+  <% end %>
+    </div>
 </div>
 <div class="contents row" >
   <% @tweets.each do |tweet| %>
   <div class="tweet">
     <div class="profile clearfix">
-      <div class="icon_image"><img src=<%= tweet.icon_image %> alt="image"></div>
-      <div class="tweet_name"><%= tweet.name %></div>
+      <div class="icon_image"><%= image_tag tweet.user.avatar.url(:thumb) %></div>
+      <div class="tweet_name"><%= tweet.user.name %></div>
     </div>
-    <div class="country">country: <%= tweet.country %></div>
-    <div class="genre">genre: <%= tweet.genre %></div>
+    <div class="country">country: <%= tweet.user.country %></div>
+    <div class="genre">genre: <%= tweet.user.genre %></div>
     <div class="text"><%= tweet.text %></div>
   </div>
   <% end %>
 </div>
-

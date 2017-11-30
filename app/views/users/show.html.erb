@@ -1,0 +1,15 @@
+<div class="contents-row">
+  <p class="itiran"><%= @name %> さんの投稿一覧</p>
+  <% @tweets.each do |tweet| %>
+   <div class="tweet_user">
+    <div class="profile clearfix">
+      <div class="icon_image"><%= image_tag tweet.user.avatar.url(:thumb) %></div>
+      <div class="tweet_name"><%= tweet.user.name %></div>
+    </div>
+    <div class="country">country: <%= tweet.user.country %></div>
+    <div class="genre">genre: <%= tweet.user.genre %></div>
+    <div class="text"><%= tweet.text %></div>
+  </div>
+  <% end %>
+  <%= paginate(@tweets) %>
+</div>

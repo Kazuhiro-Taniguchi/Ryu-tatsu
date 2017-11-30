@@ -1,0 +1,15 @@
+.tweet_user{
+  margin-bottom: 25px;
+  margin-right: 5px;
+  margin-left:2px;
+  border: solid 1px #8d9ad8;
+  background-color: #9fdfd8;
+  width: 370px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+.itiran{
+  padding-left: 5px;
+  padding-top: 5px;
+}
