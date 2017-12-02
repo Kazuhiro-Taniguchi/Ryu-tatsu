@@ -1,15 +1,27 @@
-<div class="contents-row">
-  <p class="itiran"><%= @name %> さんの投稿一覧</p>
+<div class="contents-row mypage">
+  <span class="itiran"><%= "<" + @user.name + ">" %> さんの投稿一覧</span>
+    <div class="mypage-country">country: <%= @user.country %></div>
+
+    <div class="mypage-genre">genre: <%= @user.genre %></div>
+    <div class="cost">cost: <%= @user.cost %></div>
+    <div class="term">term: <%= @user.term %></div>
+
   <% @tweets.each do |tweet| %>
    <div class="tweet_user">
     <div class="profile clearfix">
       <div class="icon_image"><%= image_tag tweet.user.avatar.url(:thumb) %></div>
       <div class="tweet_name"><%= tweet.user.name %></div>
     </div>
-    <div class="country">country: <%= tweet.user.country %></div>
-    <div class="genre">genre: <%= tweet.user.genre %></div>
-    <div class="text"><%= tweet.text %></div>
+
+    <div class="mypage-text"><%= tweet.text %></div>
   </div>
   <% end %>
   <%= paginate(@tweets) %>
+<div class="btn-group">
+  <%= link_to 'BACK', tweets_path,
+    class:"toukou-btn" %>
+      <%= link_to 'HOME', root_path,
+    class:"toukou-btn" %>
+      <%= link_to 'USER EDIT', edit_user_path,
+    class:"toukou-btn" %>
 </div>

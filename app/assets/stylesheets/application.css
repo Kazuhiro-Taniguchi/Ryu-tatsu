@@ -26,3 +26,7 @@
   height: 44px;
   background-color: ;
 }
+
+#nav {
+z-index: 100100;
+}

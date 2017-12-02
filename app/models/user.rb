@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
   has_attached_file :avatar,
-                      styles:  { medium: "10x10#", thumb: "80x80#" }
+                      styles:  { medium: "60x60>", thumb: "60x60>" }
   validates_attachment_content_type :avatar,
                                       content_type: ["image/jpg","image/jpeg","image/png"]
 

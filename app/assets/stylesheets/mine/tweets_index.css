@@ -31,8 +31,8 @@
 }
 
 .icon_image{
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   margin-left: 20px;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -45,8 +45,8 @@
   width: 200px;
   background-color: ;
   float: left;
-  margin-left: 40px;
-  margin-top: 30px;
+  margin-left: 55px;
+  margin-top: 40px;
   color: #2e3842;
   font-size: large;
   font-weight: bold;
@@ -55,6 +55,7 @@
 .country{
   height: 30px;
   background-color: ;
+  margin-top: 30px;
   margin-left: 20px;
   color: #2e3842;
   font-weight: bold;
@@ -82,4 +83,9 @@
   content: "";
   display: block;
   clear: both;
+}
+
+.btn-group2{
+  margin-left: 245px;
+  margin-bottom: 10px;
 }

@@ -12,7 +12,13 @@
   <% @tweets.each do |tweet| %>
   <div class="tweet">
     <div class="profile clearfix">
-      <div class="icon_image"><%= image_tag tweet.user.avatar.url(:thumb) %></div>
+      <div class="icon_image">
+        <% if tweet.user.avatar.nil? %>
+        <%= %>
+        <% else %>
+        <%= image_tag tweet.user.avatar.url(:thumb) %>
+        <% end %>
+        </div>
       <div class="tweet_name"><%= tweet.user.name %></div>
     </div>
     <div class="country">country: <%= tweet.user.country %></div>
@@ -20,4 +26,11 @@
     <div class="text"><%= tweet.text %></div>
   </div>
   <% end %>
+    <%= paginate(@tweets) %>
+  <div class="btn-group2">
+  <%= link_to 'MY PAGE', user_path(id: current_user.id),
+    class:"toukou-btn" %>
+      <%= link_to 'HOME', root_path,
+    class:"toukou-btn" %>
+  </div>
 </div>
