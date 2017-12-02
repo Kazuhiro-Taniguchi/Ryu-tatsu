@@ -54,3 +54,7 @@ end
   gem 'omniauth'
   gem 'omniauth-facebook'
   gem 'dotenv-rails'
+
+group :production do
+  gem 'rails_12factor'
+end
