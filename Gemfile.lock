@@ -77,6 +77,8 @@ GEM
     execjs (2.7.0)
     faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
+    font-awesome-rails (4.7.0.2)
+      railties (>= 3.2, < 5.2)
     fssm (0.2.10)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -234,6 +236,7 @@ DEPENDENCIES
   compass-rails (~> 2.0)
   devise
   dotenv-rails
+  font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
   kaminari

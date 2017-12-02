@@ -54,6 +54,7 @@ end
   gem 'omniauth'
   gem 'omniauth-facebook'
   gem 'dotenv-rails'
+  gem 'font-awesome-rails'
 
 group :production do
   gem 'rails_12factor'
