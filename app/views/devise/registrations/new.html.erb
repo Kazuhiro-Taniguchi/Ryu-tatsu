@@ -59,9 +59,14 @@
 </div>
 
 <div>
-<%= link_to "Facebookで会員登録", user_facebook_omniauth_authorize_path %>
+<%= link_to "Facebookで会員登録", user_facebook_omniauth_authorize_path, class:"facebook_link" %>
 </div>
 
 <div class="log_in_tab">
 <%= render "devise/shared/links" %>
+</div>
+
+<div class="back-btn">
+<%= link_to 'HOME', root_path,
+    class:"button fit" %>
 </div>
